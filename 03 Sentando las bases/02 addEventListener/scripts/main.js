@@ -18,11 +18,12 @@ inputNombre.addEventListener('input', interceptarNombre); */
 const formulario = document.querySelector('#contacto');
 const inputNombre = document.querySelector('#input-nombre');
 const errores = document.querySelector('.error');
+const exito = document.querySelector(".exito");
 
 function recibirNombre(event) {
-  console.log("El formulario se envio correctamente")
   event.preventDefault();
-  console.log(event);
+  exito.style.display = "block";
+  let borrador = setTimeout(borrarmensaje , 5000)
 }
 
 function interceptarNombre(event) {
@@ -30,14 +31,16 @@ function interceptarNombre(event) {
   if(event.target.value.length<=4 || event.target.value.length>= 50)
   {
     errores.style.display = "block";
-    console.log("ERROR: El nombre debe ser entre 5 y 50 caracteres")
-  }else{
-    errores.style.display = "none";
+    let borrador = setTimeout(borrarmensaje , 5000)
   }
   //console.log(event.target.value);*/
 }
 
 
-  
+function borrarmensaje(){
+  exito.style.display = "none";
+}
+
+
 formulario.addEventListener('submit', recibirNombre);
-inputNombre.addEventListener('input', interceptarNombre);
+inputNombre.addEventListener('input', interceptarNombre); 

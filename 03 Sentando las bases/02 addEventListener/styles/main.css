@@ -90,6 +90,10 @@ a {
   color:red;
   display: none;
 }
+.exito{
+  color:green;
+  display:none;
+}
 
 .primary-btn {
   background-color: var(--accent-color);
