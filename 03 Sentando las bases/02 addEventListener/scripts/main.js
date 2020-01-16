@@ -20,6 +20,18 @@ const inputNombre = document.querySelector('#input-nombre');
 const errores = document.querySelector('.error');
 const exito = document.querySelector(".exito");
 
+const datainput = document.querySelector("#input-solucion")
+
+
+/*
+function obtenerdatos(event){
+
+  //let texto = event.target.value;
+
+for(let i = 0; i<)
+  console.log(texto);
+}*/
+
 function recibirNombre(event) {
   event.preventDefault();
   exito.style.display = "block";
@@ -31,7 +43,8 @@ function interceptarNombre(event) {
   if(event.target.value.length<=4 || event.target.value.length>= 50)
   {
     errores.style.display = "block";
-    let borrador = setTimeout(borrarmensaje , 5000)
+  }else{
+    errores.style.display = "none";
   }
   //console.log(event.target.value);*/
 }
@@ -43,4 +56,5 @@ function borrarmensaje(){
 
 
 formulario.addEventListener('submit', recibirNombre);
-inputNombre.addEventListener('input', interceptarNombre); 
+inputNombre.addEventListener('input', interceptarNombre);
+datainput.addEventListener('input', obtenerdatos);

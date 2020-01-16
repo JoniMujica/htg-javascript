@@ -26,12 +26,16 @@ Para más información, revisar el código HTML.
 Una vez resuelto el ejercicio, borrar el comentario que está en el código.
 
 
-## Ejercicios técnicos
+## Ejercicios técnicos (revisar)
 
-### Ejercicio 1
+Ejercicio 1
+Usar el método .querySelector para resaltar visualmente el comentario que más te haya gustado.
 
-Usar el método `.querySelector` para resaltar visualmente el comentario que más te haya gustado.
+Ejercicio 2
+Seleccionar todos los elementos hr usando JavaScript y asignarle una clase que le asigne un estilo personalizado. El estilo puede ser cualquiera.
 
-### Ejercicio 2
+Ejercicio 3
+Ocultar los comentarios de más de 50 caracteres
 
-Seleccionar todos los elementos `hr` usando JavaScript y asignarle una clase que le asigne un estilo personalizado. El estilo puede ser cualquiera.
+Ejercicio 4
+Ocultar el comentario más largo.
