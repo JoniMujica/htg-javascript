@@ -25,6 +25,7 @@ main {
   padding: 30px;
 }
 
+
 .heading {
   background-color: var(--article-bg-color);
   letter-spacing: -2px;
@@ -48,6 +49,10 @@ main {
 
 .comment--author {
   font-weight: bold;
+}
+
+.comment--text {
+  font-weight: 0;
 }
 
 @media (prefers-color-scheme: dark) {
